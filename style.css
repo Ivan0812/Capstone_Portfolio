@@ -131,7 +131,7 @@ margin-top: 20px;
  
 /* ----- PROJECTS -----*/
 .project-container {
-    height: 70vh;
+    height: 80vh;
     display: grid;
     margin-bottom: 8rem;
 }
@@ -145,8 +145,8 @@ margin-top: 20px;
 .projects {
     display: grid;
     background: #328cc1;
-    font-size: 35px;
-    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
     justify-items: start;
     align-content: space-between;
 }

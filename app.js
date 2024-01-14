@@ -1,13 +1,6 @@
 
 
 
- document.addEventListener('DOMContentLoaded', function() {
-        // Add the 'fade-in' class to .profile when the page is loaded
-        var profile = document.querySelector('.profile');
-        profile.classList.add('fade-in');
-    });
-
-
 // ----- MODALS ----- //
 function openModal(modalId) {
     document.getElementById(modalId).style.display = 'block';
@@ -26,11 +19,11 @@ document.querySelectorAll('.about').forEach(function(element) {
     });
 });
 
-    //  document.querySelectorAll('.contact').forEach(function(element) {
-    //  element.addEventListener('click', function() {
-    //    openModal('contactModal');
-    //   });
-    // });
+      document.querySelectorAll('.tel').forEach(function(element) {
+      element.addEventListener('click', function() {
+        openModal('telModal');
+    });
+ });
 
 
 // DROPDOWN //
@@ -52,4 +45,10 @@ document.querySelectorAll('.about').forEach(function(element) {
     });
 
 
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Add the 'fade-in' class to .profile when the page is loaded
+        var profile = document.querySelector('.profile');
+        profile.classList.add('fade-in');
+    });
    

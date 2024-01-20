@@ -13,36 +13,39 @@ function closeModal(modalId) {
 }
 
 
-document.querySelectorAll('.about').forEach(function(element) {
+document.querySelectorAll('.contact-button').forEach(function(element) {
     element.addEventListener('click', function() {
-        openModal('aboutModal');
+        openModal('contactModal');
     });
 });
 
-      document.querySelectorAll('.tel').forEach(function(element) {
-      element.addEventListener('click', function() {
-        openModal('telModal');
-    });
- });
+
+ 
+
+// //    document.body.addEventListener('click', () => {
+// //          modal.style.display = 'none';
+// //      });
 
 
 // DROPDOWN //
-    var dropdownContent = document.querySelector('.dropdown-content');
-    var projectButton = document.querySelector('.navButton');
-
-    projectButton.addEventListener('click', function(event) {
-        event.stopPropagation(); 
-        if (dropdownContent.style.display === 'none' || dropdownContent.style.display === '') {
+    const dropdownContent = document.querySelector('.dropdown-content');
+    const projectButton = document.querySelector('.navButton');
+   
+   
+   projectButton.addEventListener('click', function(event) {
+       event.stopPropagation(); 
+       if (dropdownContent.style.display === 'none' || dropdownContent.style.display === '') {
             dropdownContent.style.display = 'block';
         } else {
             dropdownContent.style.display = 'none';
-        }
-    });
-
+       }
+   });
     
     document.body.addEventListener('click', function() {
         dropdownContent.style.display = 'none';
     });
+
+  
 
 
 

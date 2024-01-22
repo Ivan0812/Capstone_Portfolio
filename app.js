@@ -50,8 +50,9 @@ document.querySelectorAll('.contact-button').forEach(function(element) {
 
 
     document.addEventListener('DOMContentLoaded', function() {
-        // Add the 'fade-in' class to .profile when the page is loaded
+        // Add the 'fade-in' class 
         var profile = document.querySelector('.profile');
         profile.classList.add('fade-in');
     });
    
+

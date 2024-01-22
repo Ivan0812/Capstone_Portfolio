@@ -5,27 +5,21 @@
   box-sizing: border-box;
 }
 
+:root {
+    --prussian-blue: #003153;
+    --sky-blue: #328cc1;
+    --gold-leaf: #d9b310;
+    --white: #ffffff;
+}
+
+/*  var(--prussian-blue)  var(--sky-blue)  var(--gold-leaf)  var(--white)   */
+
  body {
-    background: linear-gradient(-45deg, #003153, #328cc1, #003153, #328cc1);
-/*	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;  */
+    background: linear-gradient(-45deg, var(--prussian-blue), var(--sky-blue), var(--prussian-blue), var(--sky-blue));
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
 }
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
 
 
 /* ----- NAVIGATION ----- */
@@ -45,7 +39,7 @@ nav {
 }
 
 .navIcon {
-    fill: #d9b310;
+    fill: var(--gold-leaf);
     width: 4em;
     height: 4em;
     padding: 4px;
@@ -57,11 +51,12 @@ nav {
 }
 
 /* ----- DROPDOWN  ----- */
+
 .dropdown-content {
     display: none;
     position: fixed; 
-    background-color: #328cc1;
-    color: #d9b310;
+    background-color: var(--sky-blue);
+    color: var(--gold-leaf);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
@@ -71,14 +66,10 @@ nav {
 .dropdown-content a {
     display: flex;
     padding: 12px 16px;
-    text-decoration: none;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .dropdown-content a:hover {
-    background-color: #003153;
+    background-color: var(--prussian-blue);
 }
 
 ul {
@@ -94,13 +85,13 @@ li {
 }
 
 li:hover {
-    color: #ffd620;
-    fill: #ffd620;
+    color: var(--gold-leaf);
+    fill: var(--gold-leaf);
 }
 
 
 a {
-    color: #d9b310;
+    color: var(--gold-leaf);
     text-decoration: none;
     font-weight:bold;
 }
@@ -111,7 +102,7 @@ a {
     display: grid;
     max-width: 100%;
     margin-top: 2em;
-    color: #ffffff;
+    color: var(--white);
     align-items: center;
     align-content: space-around;
     justify-items: center;
@@ -125,7 +116,7 @@ a {
 }
 
  .title {
-    text-shadow: 2px 4px 2px #328cc1;
+    text-shadow: 2px 4px 2px var(--sky-blue);
     transform: translateX(2cm);
     transition: opacity 1s ease-in-out, transform 2s ease-in-out;
 }
@@ -143,7 +134,7 @@ a {
     margin-top: 20px;
     width: 300px;
     height: auto;
-    box-shadow: 0 8px 16px #d9b310;
+    box-shadow: 15px 13px 3px #1d2731;
     transition: transform 3s ease-in-out;
  }
 
@@ -153,7 +144,7 @@ a {
 
  hr {
      width: 90%;
-     border: solid 1px #d9b310;
+     border: solid 1px var(--gold-leaf);
     
  }
 
@@ -177,13 +168,13 @@ a {
 .story-title {
     font-size: 30px;
     font-weight: bold;
-    color: #d9b310;
-    text-shadow: 7px 6px 2px #328cc1;
+    color: var(--gold-leaf);
+    text-shadow: 7px 6px 2px var(--sky-blue);
 }
 
 .me {
-    text-shadow: 7px 6px 2px #328cc1;
-    color: #fff;
+    text-shadow: 7px 6px 2px var(--sky-blue);
+    color: var(--white);
     font-size: 35px;
     font-weight: bold;  
 }
@@ -201,9 +192,9 @@ a {
 
  .story {
      padding: 20px;
-     color: #fff;
+     color: var(--white);
      width: 90%;
-     border: solid 1px #003153;
+     border: solid 1px var(--prussian-blue);
      box-shadow: 0 8px 16px #000000a4;
      border-radius: 7px 5px;
  }
@@ -216,14 +207,14 @@ a {
 }
 
 .project-text {
-    color: #ffffff;
+    color: var(--white);
     font-weight: bold;
 
 }
 
 .projects {
     display: grid;
-    color: #fff;
+    color: var(--white);
     font-size: 18px;
     padding: 10px;
     justify-items: start;
@@ -245,15 +236,15 @@ a {
 
 footer {
     display: flex;
-    background:#003153;
+    background:var(--prussian-blue);
     width: 100%;
-    color: #d9b310;
+    color: var(--gold-leaf);
     height: 38vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 16px;
-    border-top: solid 1px #328cc1;
+    border-top: solid 1px var(--sky-blue);
 }
 
 .contact {
@@ -272,19 +263,19 @@ footer {
 }
 
 .contact-icon {
-    fill: #d9b310;
+    fill: var(--gold-leaf);
     margin-right: 14px;
     margin-top: 5px;
 }
 
 .contact-icon:hover {
-    fill: #ffd620;
+    fill: var(--gold-leaf);
 }
 
 .submit,
 .contact-button {
     cursor: pointer;
-    background-color: #d9b310;
+    background-color: var(--gold-leaf);
     color: #003153;
     box-shadow: 0 8px 16px #000000a4;
     margin-left: 3em;
@@ -295,12 +286,18 @@ footer {
     height: 2em;
     text-align: center;
 }
+
+.submit {
+    margin: auto;
+}
+
 .submit:hover,
 .contact-button:hover {
     border: solid 1px #d9b310;
-    background-color: #003153;
-    color: #d9b310;
+    background-color: var(--prussian-blue);
+    color: var(--gold-leaf);
 }
+
 .submit:active,
 .contact-button:active {
      box-shadow: none;
@@ -316,8 +313,8 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #328cc1;
-    color: #fff;
+    background-color: var(--sky-blue);
+    color: var(--white);
     z-index: 1;
     overflow-y: scroll;
     box-shadow: 0 8px 16px #000000a4;
@@ -329,9 +326,14 @@ form {
 
 fieldset {
     border:none;
+    width: 90%;
 }
  fieldset li {
      margin-bottom: 1em;
+ }
+
+ legend {
+     text-align: center;
  }
 
  input {
@@ -350,7 +352,7 @@ fieldset {
  }
 
 
- /* .overlay {
+    .overlay {
     display: none;
     position: fixed;
     top: 0;
@@ -360,14 +362,13 @@ fieldset {
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 0;
 } 
-*/
 
 /* ----- CLOSE BUTTON ----- */
 
 .closecontact {
     border: none;
-    color: #d9b310;
-    background-color: #003153;
+    color: var(--gold-leaf);
+    background-color: var(--prussian-blue);
     height: 2rem;
     width: 2rem;
     font-size: 24px;
@@ -381,7 +382,7 @@ fieldset {
 
 .closecontact:hover {
     color: #003153;
-     background-color: #d9b310;
+     background-color: var(--gold-leaf);
 }
 .closecontact:active {
      box-shadow: none;
@@ -469,7 +470,7 @@ fieldset {
     }
 
     .modal {
-        width: auto;
+        width: 30%;
     }
 
     .project-container {

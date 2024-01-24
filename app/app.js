@@ -1,9 +1,9 @@
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
         // Add the 'fade-in' class 
-        var profile = document.querySelector('.profile');
+        const profile = document.querySelector('.profile');
         profile.classList.add('fade-in');
     });
 

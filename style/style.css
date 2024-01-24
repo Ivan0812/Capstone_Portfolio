@@ -106,7 +106,7 @@ a {
     align-items: center;
     align-content: space-around;
     justify-items: center;
-    height: 70vh;
+    height: 100vh;
     opacity: 0;
     transition: opacity 3s ease-in-out;
  } 
@@ -156,7 +156,7 @@ a {
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    height: 100vh;
+    height: 125vh;
  }
 
 .storytitle-container {
@@ -205,7 +205,7 @@ a {
  
 /* ----- PROJECTS -----*/
 .project-container {
-    height: 265vh;
+    height: 330vh;
     display: grid;
     margin-bottom: 10rem;
 }
@@ -454,7 +454,7 @@ fieldset {
     .profile {
         margin-top: 0;
         padding-left: 2em;
-        height: 100vh;
+        height: 125vh;
         grid-column: 1 / span 3;
     } 
     
@@ -477,7 +477,7 @@ fieldset {
 
     #about-me {
         display: grid;
-        height: 100vh;
+        height: 125vh;
         grid-column: 1 / span 3;
         justify-items: center;
     }
@@ -506,7 +506,7 @@ fieldset {
 
     .project-container {
         padding-top: 70px;
-        height: 200vh;
+        height: 250vh;
         grid-column: 1 / span 3;
     }
 

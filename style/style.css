@@ -334,6 +334,10 @@ footer {
      box-shadow: none;
 }
 
+.link:hover {
+    fill:#ffffff;
+}
+
 
 /* ----- MODAL ----  */
 .modal {

@@ -115,7 +115,7 @@ a {
     opacity: 1;
 }
 
- .title {
+ .title  {
     text-shadow: 2px 4px 2px var(--sky-blue);
     transform: translateX(2cm);
     transition: opacity 1s ease-in-out, transform 3s ease-in-out;
@@ -205,9 +205,17 @@ a {
  
 /* ----- PROJECTS -----*/
 .project-container {
-    height: 180vh;
+    height: 220vh;
     display: grid;
     margin-bottom: 6rem;
+}
+
+.project-title {
+    font-size: 38px;
+    text-transform: uppercase;
+    margin-bottom: 8rem;
+    text-shadow: 2px 4px 2px var(--sky-blue);
+
 }
 
 .project-text {
@@ -225,14 +233,33 @@ a {
     align-content: space-between;
 }
 
+.project-image {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0.5em;
+    border:solid 2px var(--gold-leaf);
+    border-radius: 50%;
+
+}
 
 .box {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-items: center;
     transition: transform 0.4s ease-in-out;
     font-size: 30px;
+    box-shadow: 8px 7px 3px var(--prussian-blue);
+    justify-content: space-between;
+    padding: 18px;
+    border: 1px solid var(--prussian-blue);
+    border-radius: 5px;
+    margin-top: 1em;
 }
 
 .box:hover {
-    transform: scale(1.2); 
+    transform: scale(1.1); 
+    box-shadow: none;
 }
 
 
@@ -475,13 +502,17 @@ fieldset {
 
     .project-container {
         padding-top: 70px;
-        height: 100vh;
+        height: 200vh;
         grid-column: 1 / span 3;
     }
 
     .project-text {
         grid-column: 3 / span 3;
         font-size: 25px;
+    }
+
+    .box {
+        width: 30%;
     }
 
     .projects {

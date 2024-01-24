@@ -205,9 +205,9 @@ a {
  
 /* ----- PROJECTS -----*/
 .project-container {
-    height: 220vh;
+    height: 265vh;
     display: grid;
-    margin-bottom: 6rem;
+    margin-bottom: 10rem;
 }
 
 .project-title {
@@ -516,7 +516,7 @@ fieldset {
     }
 
     .box {
-        width: 30%;
+        width: 35%;
     }
 
     .projects {

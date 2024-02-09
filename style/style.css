@@ -435,21 +435,32 @@ fieldset {
 
     .grid-container {
         display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-areas: 
-        "profile profile"
-        "profile profile"
-        "hr"
-        "#about-me #about-me"
-        "#about-me #about-me"
-        "hr"
-        "project-container project-container"
-        "project-container project-container"
-        "footer footer"
-        ;
-    }
-
-   
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: auto;
+        gap: 20px;
+        grid-template-areas:
+          "profile profile"
+          "about about"
+          "projects projects"
+          "footer footer";
+      }
+      
+      .profile {
+        grid-area: profile;
+      }
+      
+      #about-me {
+        grid-area: about;
+      }
+      
+      .project-container {
+        grid-area: projects;
+      }
+      
+      footer {
+        grid-area: footer;
+      }
+      
 
     .profile {
         margin-top: 0;

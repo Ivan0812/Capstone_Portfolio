@@ -201,7 +201,24 @@ a {
      border: solid 1px var(--prussian-blue);
      box-shadow: 0 8px 16px #000000a4;
      border-radius: 7px 5px;
- }
+	background: linear-gradient(-45deg, var(--prussian-blue),  var(--gold-leaf), var(--prussian-blue), var(--sky-blue));
+	background-size: 400% 400%;
+	animation: gradient 18s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
  
 /* ----- PROJECTS -----*/
 .project-container {
@@ -212,7 +229,7 @@ a {
 .project-title {
     font-size: 38px;
     text-transform: uppercase;
-    margin-left: 1em;
+    margin-left: 1.25em;
     /* margin-bottom: 8rem; */
     text-shadow: 2px 4px 2px var(--sky-blue);
     color:  var(--white);
@@ -223,24 +240,23 @@ a {
 .project-text {
     color: var(--white);
     font-weight: bold;
-
+    margin-top: 20px;
 }
 
 .projects {
     color: var(--white);
     font-size: 18px;
     padding: 10px;
+    margin: 15px;
     justify-items: start;
     align-content: space-between;
 }
 
 .project-image {
-    width: 60px;
+    width: 70px;
     height: 60px;
     margin-bottom: 0.5em;
     border:solid 2px var(--gold-leaf);
-    border-radius: 50%;
-
 }
 
 .box {
@@ -250,17 +266,17 @@ a {
     align-items: center;
     transition: transform 0.4s ease-in-out;
     font-size: 30px;
-    box-shadow: 8px 7px 3px var(--prussian-blue);
+    box-shadow: 8px 7px 3px 5px var(--prussian-blue);
     justify-content: space-between;
-    padding: 18px;
+    padding: 20px;
     border: 1px solid var(--prussian-blue);
-    border-radius: 5px;
-    margin-top: 1em;
+    margin-top: 1.25em;
 }
 
 .box:hover {
-    transform: scale(1.1); 
+    transform: scale(1.02); 
     box-shadow: none;
+    background-color: var(--prussian-blue);
 }
 
 
@@ -437,19 +453,8 @@ fieldset {
     .grid-container {
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-areas: 
-        "profile profile"
-        "profile profile"
-        "hr"
-        "#about-me #about-me"
-        "#about-me #about-me"
-        "hr"
-        "project-container project-container"
-        "project-container project-container"
-        "footer footer"
-        ;
     }
-
+    
     .profile {
         margin-top: 0;
         padding-left: 2em;
@@ -459,7 +464,7 @@ fieldset {
     
     .title {
          font-size: 30px;
-         grid-column: 1 / span 3;
+         grid-column: 1 / span 2;
      }
 
     .my-img {
@@ -491,7 +496,7 @@ fieldset {
    
     .story {
         width: 80%;
-        font-size: 18px;
+        font-size: 22px;
         line-height: 28px;
         margin: 3em;
         grid-row: 1;
@@ -523,7 +528,7 @@ fieldset {
     }
 
     .projects {
-        height: 220px;
+        height: 300px;
         padding-left: 2em;
     }
 

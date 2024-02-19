@@ -222,7 +222,7 @@ a {
  
 /* ----- PROJECTS -----*/
 .project-container {
-    height: 200vh;
+    height: 245vh;
     margin-bottom: 10rem;
 }
 
@@ -262,7 +262,7 @@ a {
 .box {
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: 100%;
     align-items: center;
     transition: transform 0.4s ease-in-out;
     font-size: 30px;
@@ -513,7 +513,7 @@ fieldset {
         grid-template-columns: 50% 50%;
         grid-template-rows: auto-fit;
         padding-top: 70px;
-        height: 170vh;
+        height: 200vh;
         grid-column: 1 / span 3;
     }
 
@@ -524,7 +524,7 @@ fieldset {
     }
 
     .box {
-        width: 65%;
+        width: 100%;
     }
 
     .projects {
@@ -543,7 +543,7 @@ fieldset {
 }
 
 /* ----- MEDIA 992px -----*/
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
     .my-img {
         margin: 0 50px 50px 0;
         width: 500px;
@@ -562,5 +562,9 @@ fieldset {
 
     .story {
         width: 60%;
+    }
+
+    .box {
+        width: 70%;
     }
 }

@@ -10,6 +10,8 @@
     --sky-blue: #328cc1;
     --gold-leaf: #d9b310;
     --white: #ffffff;
+
+    scroll-behavior: smooth;
 }
 
 /*  var(--prussian-blue)  var(--sky-blue)  var(--gold-leaf)  var(--white)   */
